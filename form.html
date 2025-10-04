@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+   <nav><a href="form.html"></a></nav> 
+    <h1 class="intro">Reserve Your Room</h1>
+    <h2>Our Reservation Policies</h2>
+    <section class="policies">
+        <ul>
+            <li>Check in time after 3:00pm</li>
+            <li>Check-out time by 11:00 am or charged are incurred</li>
+            <li>Breakfast and afternoon tea/snacks included in cost</li>
+            <li>Proof of COVID-19 Vaccination required. Upload image(s) below</li>
+            <li>50% deposit required at book</li>
+            <li>Cancellations less than 72 hours ahead of check-in forfeit 50% of deposit</li>
+        </ul>
+    </section>
+    <section class="reserve">
+        <form method="post" name="reservation" data-netlify="true">
+            <div>
+                <label for="firstname">First Name</label>
+                <input type="text" name="firstname" placeholder="first name" required>
+            </div>
+
+            <div>
+                <label for="lastname">Last Name</label>
+                <input type="text" name="lastname" placeholder="last name" required>
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="email" required>
+            </div>
+
+            <div>
+                <Label for="phone">Phone</Label>
+                <input type="tel" name="phone"  placeholder="phone number" required>
+            </div>
+
+            <div>
+                <label for="checkindate">Check-in Date</label>
+                <input type="date" name="checkindate" placeholder="Check-In Date" required>
+            </div>
+
+            <div>
+                <Label for="checkoutdate">Check-Out Date</Label>
+                <input type="date" name="checkoutdate" placeholder="Check-Out Date" required>
+            </div>
+
+            <div>
+                <label for="numberofguests">Number of Guests</label>
+                <input type="number" min="1" max="4" name="numberofguests" placeholder="number of guests" required>
+            </div>
+
+            <div>
+                <label>Room Type</label>
+                <select required>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <Option>Option 3</Option>
+                </select>
+            </div>
+
+            <div>
+                <div>Ocean View (additional cost)</div>
+                <label for="view">Yes</label>
+                <input type="radio" name="view" id="yes" value="yes">
+                <label for="view">No</label>
+                <input type="radio" name="view" id="no" value="no">
+            </div>
+
+            <div>
+                <label for="notes">Notes</label>
+                <input type="textarea" name="notes" placeholder="List Allergies or Other Requests">
+            </div>
+
+            <div>
+                <label for="vaccineproof">Vaccine Proof</label>
+                <input type="file" name="vaccineproof">
+            </div>
+
+            <div>
+                <label for="terms">I agree to all terms listed above</label>
+                <input type="checkbox" name="terms" required>
+            </div>
+
+            <div>
+                <label for="password">Create a password to return. Username is your email</label>
+                <input type="password" name="password" required>
+            </div>
+
+            <div>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+
+            <footer>&copy The Summer Sun Inn<br>Westbrook, CT</footer>
+
+        </form>
+    </section>
+
+
+
+
+<div id="wrapper">
+</div>
+</body>
+</html>
