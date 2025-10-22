@@ -1,7 +1,12 @@
 html {
-    background-color: #f5ad18;
+    background-color: rgb(245, 171, 24);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 1.5;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
 }
 
 h1, h2, h3 {
