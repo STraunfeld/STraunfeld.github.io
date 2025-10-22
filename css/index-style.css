@@ -25,6 +25,10 @@ h1{
 ul, ol {
     list-style-type:"\1f496"; 
 }
+img{
+    display:block;
+    margin: 0 auto;
+}
 a{
     color:#561530;
 }
