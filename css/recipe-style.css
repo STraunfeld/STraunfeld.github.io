@@ -1,0 +1,185 @@
+/* 
+.limelight-regular {
+  font-family: "Limelight", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-<uniquifier> {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+    */
+
+html{
+    box-sizing:border-box;
+    font-family: "Roboto", "Limelight", sans-serif;
+    font-size: 1rem;
+    line-height: 125%;
+    color: #50504f;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+nav {
+    background-color: #c98226;
+    text-align: center;
+}
+
+nav li{
+    display: inline;
+}
+
+nav a{
+    padding: 20px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav a:visited{
+    color: whitesmoke;
+}
+
+nav a:hover{
+    background-color: white;
+    color: grey;
+    text-decoration: underline;
+}
+
+nav a:focus{
+    outline-color: #50504f;
+    text-decoration: underline;
+}
+
+nav a:active{
+    color:red;
+    text-decoration:underline dotted;
+}
+h1{
+    font-family:"Limelight";
+    font-size: 3rem;
+    line-height:4rem;
+    margin:6% 0;
+    text-align:center;
+    text-shadow: 2px 2px 2px #acaaaa;
+}
+
+h2{
+    font-family:"Limelight";
+    font-size: 1.5rem;
+}
+
+img{
+    border-radius: 50%;
+    box-shadow: 8px 8px 14px #acaaaa;
+    float:left;
+    height: auto;
+    max-width: 30%;
+    margin-left:10%;
+    margin-right:10%;
+    shape-outside: circle(50%);
+}
+
+.rate{
+    clear:both;
+    margin-top: 8%;
+    text-align:center;
+}
+.emoji::before{
+    content:"\1f382";
+}
+
+main{
+    margin: auto;
+    width: 80%;
+}
+
+.details,
+.ingredients,
+.nutrition,
+.instructions{
+    width:40%;
+    float: left;
+}
+.details,
+.instructions{
+    margin-right:12%;
+    margin-left:6%;
+}
+
+blockquote{
+    background-color:#e4b679;
+    border-radius: 50%;
+    clear:both;
+    font-family:"limelight";
+    height:280px;
+    margin:40px auto;
+    outline: dotted 6px #c98226;
+    outline-offset:5px;
+    padding:110px 16px 0 20px;
+    text-align:center;
+    width:300px;
+}
+
+
+footer{
+    background-color: #c98226;
+    text-color:white;
+    padding: 2% 0;
+    margin-top: 10px;
+}
+footer li{
+    display: block;
+}
+
+footer a{
+    display: block;
+    color: white;
+    text-align:center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+footer a:visited{
+    color: whitesmoke;
+}
+
+footer a:hover{
+    background-color: white;
+    color: grey;
+    text-decoration: underline;
+}
+
+footer a:focus{
+    outline-color: #50504f;
+    text-decoration: underline;
+}
+
+footer a:active{
+    color:red;
+    text-decoration:underline dotted;
+}
+
+
+.col1,
+.col2,
+.col3 {
+    display:block;
+    float:left;
+    width: 33%;
+}
+
+footer p{
+    clear:both;
+}
