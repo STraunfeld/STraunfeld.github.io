@@ -183,3 +183,102 @@ footer a:active{
 footer p{
     clear:both;
 }
+
+@media (max-width: 810px) {
+    nav a{
+        font-size: .9rem;
+        letter-spacing: normal;
+        padding: 8px;
+    }
+    nav ul{
+        padding-left: 10px;
+    }
+    main {
+        width: 90%;
+    }
+    h1 {
+        font-size: 1.8rem;
+        line-height: 2rem;
+        text-shadow: none;
+    }
+    h2{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    
+    img{
+        display: block;
+        margin: auto;
+        margin-right: 20px;
+        max-width: 50%;
+
+    }
+    .rate{
+        font-size: .8rem;
+    }
+
+    .nutrition,
+    .instructions {
+        float: none;
+        margin: auto;
+        min-width: 90%;
+    }
+
+    footer {
+        font-size:.7rem;
+    }
+}
+
+@media (max-width: 360px) {
+    nav a{
+        font-size: .9rem;
+        letter-spacing: normal;
+        padding: 8px;
+    }
+    nav ul{
+        padding-left: 10px;
+    }
+    main {
+        width: 90%;
+    }
+    h1 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        text-shadow: none;
+    }
+    h2{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    
+    img{
+        display: block;
+        float: none;
+        margin: auto;
+        max-width: 75%;
+        shape-outside: none;
+    }
+    .rate{
+        font-size: .8rem;
+    }
+
+    .details,
+    .ingredients,
+    .nutrition,
+    .instructions {
+        float: none;
+        margin: auto;
+        min-width: 90%;
+    }
+    .col1,
+    .col2,
+    .col3 {
+    display:block;
+    float: none;
+    width: 90%;
+    }
+
+    footer {
+        font-size:.7rem;
+    }
+}
