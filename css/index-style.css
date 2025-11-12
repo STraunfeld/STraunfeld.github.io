@@ -1,7 +1,7 @@
 html {
     background-color: rgb(245, 171, 24);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    line-height: 1.5;
+    line-height: 1.5rem;
 }
 *,
 *::before,
@@ -61,9 +61,60 @@ nav a:focus {
 p{
     color:#561530;
 }
+.intro-text{
+    margin: 0 auto;
+    width: 80%;
+}
 
 footer>p{
     color:#9e1c60;
     font-size: .7rem;
     font-style: italic;
+}
+
+.return-to-top{
+    background-color:#561530;
+    bottom:0;
+    left:0;
+    min-height: 2rem;
+    position: fixed;
+    right:0;
+    text-align: center;
+}
+
+.return-to-top a{
+    color:rgb(245, 171, 24);
+}
+
+.return-to-top a:hover{
+    background-color:rgb(245, 171, 24);
+    color:#561530;
+    padding: 3rem;
+    transition:all 1s ease-out;
+}
+
+.pages{
+    background-color: #561530;
+    left:0;
+    min-height: 2rem;
+    position: relative;
+    right: 0;
+    top: 0;
+    text-align:center;
+}
+
+.pages li{
+    display:inline-block;
+    padding: 2rem;
+}
+
+.pages a:visited{
+    color:rgb(245, 171, 24);
+}
+
+.pages a:hover{
+    background-color:rgb(245, 171, 24);
+    color:#561530;
+    padding: 3rem;
+    transition:all 1s ease-out;
 }

@@ -16,7 +16,28 @@ h1 {
     font-size: 3.5rem;
     font-weight:normal;
     letter-spacing: .1rem;
+    text-align:center;
     text-transform: capitalize;
+}
+.history{
+    background:linear-gradient(315deg, #000 3%, grey 38%, #fff 59%);
+    background-size: 400% 400%;
+    animation: gradientanimation 5s ease infinite;
+}
+@keyframes gradientanimation{
+    0%{
+        background-postion: 0% 0%;
+    }
+    50%{
+        background-position: 100% 100%;
+    }
+    100%{
+        background-position:0% 0%;
+    }
+}
+img{
+    display:block;
+    margin: 0 auto;
 }
 
 h2 {
@@ -29,8 +50,23 @@ h3{
 
 .site-intro {
     font-size: 1.25rem;
+    margin: 0 auto;
+    max-width:80%;
 }
 
+.design,
+.type{
+    width:40%;
+    float:left;
+}
+
+.design{
+    margin-right:12%;
+    margin-left:6%;
+}
+hr{
+   clear:both;
+}
 nav a:link { 
     color:black;
     text-decoration:none;
@@ -53,4 +89,86 @@ nav a:active {
 nav a:focus {
     color:blue;
     text-decoration:underline;
+}
+
+.pages{
+    background-color: #bb1b47;
+    left:0;
+    min-height: 2rem;
+    position: relative;
+    right: 0;
+    top: 0;
+    text-align:center;
+}
+
+.pages li{
+    display:inline-block;
+    padding: 2rem;
+}
+
+.pages a:visited{
+    color:white;
+}
+
+.pages a:hover{
+    background-color:white;
+    color:#bb1b47;
+    padding: 3rem;
+    transition:all 1s ease-out;
+}
+@media (min-width: 361px){
+    .return-to-top{
+        display:none;
+    }
+}
+@media (max-width: 360px) {
+    .pages{
+        width:100%;
+    }
+    .pages a{
+        font-size: .9rem;
+        letter-spacing:normal;
+        padding:4px;
+    }
+    .pages ul{
+        padding-left: 10px;
+    }
+    main{
+        width:95%;
+    }
+    .history{
+        animation:none;
+    }
+    h1{
+        font-size:2rem;
+    }
+    .site-intro{
+        font-size:.8rem;
+        text-align:center;
+    }
+    img{
+        max-width:80%;
+    }
+    .design,
+    .type{
+        display:block;
+        float:none;
+        width:90%;
+    }
+    footer {
+        font-size:.7rem;
+    }
+    .return-to-top{
+        background-color:#bb1b47;
+        bottom:0;
+        left:0;
+        position:fixed;
+        right:0;
+        text-align:center;
+    }
+    .return-to-top a{
+        color:white;
+        text-decoration:none;
+    }
+
 }
